@@ -15,6 +15,8 @@ module top_module (
     always @(*) begin
         if (~arrived)
            keep_driving = ~gas_tank_empty;
+        else
+            keep_driving = gas_tank_empty;  
     end
 
 endmodule
