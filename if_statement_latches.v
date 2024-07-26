@@ -8,6 +8,8 @@ module top_module (
     always @(*) begin
         if (cpu_overheated)
            shut_off_computer = 1;
+        else
+            shut_off_computer = 0;
     end
 
     always @(*) begin
